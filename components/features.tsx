@@ -34,7 +34,7 @@ export default function Features() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">Teroka penyelesaian kami</h1>
-            <p className="text-xl text-gray-600">Berasaskan perisian sumber terbuka (Open source) yang boleh didapatkan secara percuma di <a className="text-blue-600 hover:underline" href="https://github.com/Dev4w4n/e-masjid" target='_blank'>Github</a> mengikut terma dan syarat.</p>
+            <p className="text-xl text-gray-600">Berasaskan perisian sumber terbuka <a className="text-blue-600 hover:underline" href="https://github.com/Dev4w4n/e-masjid" target='_blank'>(Open source) </a> khas untuk masjid/surau seluruh Malaysia secara <b>percuma</b>.</p>
           </div>
 
           {/* Section content */}
