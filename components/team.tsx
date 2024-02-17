@@ -90,9 +90,9 @@ export default function Team() {
                   <blockquote className="text-xl font-medium mb-4">
                     Fazreil Amreen
                   </blockquote>
-                  <cite className="block font-bold text-lg not-italic mb-1">Senior DevOps Engineer</cite>
+                  <cite className="block font-bold text-lg not-italic mb-1">DevOps</cite>
                   <div className="text-gray-600">
-                    <span>MCSB </span> 
+                    <span>MIDF</span> 
                   </div>
                   <div>
                     <a className="text-blue-600 hover:underline" target='_blank' href="https://mjsr.e-masjid.my">LinkedIn</a>
