@@ -6,6 +6,7 @@ import IzanImage from '@/public/images/izan.png'
 import KimImage from '@/public/images/kim.png'
 import PojiImage from '@/public/images/poji.png'
 import ZulImage from '@/public/images/zul.png'
+import FabImage from '@/public/images/fazreil.png'
 
 export default function Team() {
   return (
@@ -84,7 +85,7 @@ export default function Team() {
               <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
                 <div className="text-center px-3 py-8 pt-20 mx-4 md:mx-0">
                   <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
-                    <Image className="relative rounded-full" src={TestimonialImage} width={96} height={96} alt="Izan" />
+                    <Image className="relative rounded-full" src={FabImage} width={96} height={96} alt="Izan" />
                   </div>
                   <blockquote className="text-xl font-medium mb-4">
                     Fazreil Amreen
