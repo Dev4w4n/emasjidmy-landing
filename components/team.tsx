@@ -53,7 +53,7 @@ export default function Team() {
                       <span>Intel Corporation </span> 
                     </div>
                     <div>
-                      <a className="text-blue-600 hover:underline" target='_blank' href="https://mjsr.e-masjid.my">LinkedIn</a>
+                      <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/rohaizanroosley/">Profil LinkedIn</a>
                     </div>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ export default function Team() {
                     <span>SEEK </span> 
                   </div>
                   <div>
-                  <a className="text-blue-600 hover:underline" target='_blank' href="https://mjsr.e-masjid.my">LinkedIn</a>
+                  <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/nik-mohamad-anas-kamarudin-99614235/">Profil LinkedIn</a>
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function Team() {
                     <span>MIDF</span> 
                   </div>
                   <div>
-                    <a className="text-blue-600 hover:underline" target='_blank' href="https://my.linkedin.com/in/ts-fazreil-amreen-abdul-jalil-a0259321">LinkedIn</a>
+                    <a className="text-blue-600 hover:underline" target='_blank' href="https://my.linkedin.com/in/ts-fazreil-amreen-abdul-jalil-a0259321">Profil LinkedIn</a>
                   </div>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export default function Team() {
                     <span>Motorola Solutions </span> 
                   </div>
                   <div>
-                  <a className="text-blue-600 hover:underline" target='_blank' href="https://mjsr.e-masjid.my">LinkedIn</a>
+                  <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/muhammadfairuz-anwar/">Profil LinkedIn</a>
                   </div>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function Team() {
                     <span>Universiti Teknologi Petronas </span> 
                   </div>
                   <div>
-                  <a className="text-blue-600 hover:underline" target='_blank' href="https://mjsr.e-masjid.my">LinkedIn</a>
+                  <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/zulkarnain-jahidi-nordin-a93288245">Profil LinkedIn</a>
                   </div>
                 </div>
               </div>
@@ -158,7 +158,7 @@ export default function Team() {
                     <span>Freelancer </span> 
                   </div>
                   <div>
-                  <a className="text-blue-600 hover:underline" target='_blank' href="https://mjsr.e-masjid.my">LinkedIn</a>
+                  <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/syahrul-hakimah-ong/">Profil LinkedIn</a>
                   </div>
                 </div>
               </div>
@@ -178,7 +178,7 @@ export default function Team() {
                     <span>AMD </span> 
                   </div>
                   <div>
-                  <a className="text-blue-600 hover:underline" target='_blank' href="https://mjsr.e-masjid.my">LinkedIn</a>
+                  <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/fauzi-ibrahim-81092a237">Profil LinkedIn</a>
                   </div>
                 </div>
               </div>
