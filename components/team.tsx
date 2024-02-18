@@ -6,6 +6,7 @@ import IzanImage from '@/public/images/izan.png'
 import KimImage from '@/public/images/kim.png'
 import PojiImage from '@/public/images/poji.png'
 import ZulImage from '@/public/images/zul.png'
+import FabImage from '@/public/images/fazreil.png'
 
 export default function Team() {
   return (
@@ -19,7 +20,7 @@ export default function Team() {
               <stop stopColor="#FFF" offset="0%" />
               <stop stopColor="#EAEAEA" offset="77.402%" />
               <stop stopColor="#DFDFDF" offset="100%" />
-            </linearGradient>
+            </linearGradient>TestimonialImage
           </defs>
           <g transform="translate(0 -3)" fill="url(#illustration-02)" fillRule="evenodd">
             <circle cx="1630" cy="128" r="128" />
@@ -84,17 +85,17 @@ export default function Team() {
               <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
                 <div className="text-center px-3 py-8 pt-20 mx-4 md:mx-0">
                   <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
-                    <Image className="relative rounded-full" src={TestimonialImage} width={96} height={96} alt="Izan" />
+                    <Image className="relative rounded-full" src={FabImage} width={96} height={96} alt="Mr Fab" />
                   </div>
                   <blockquote className="text-xl font-medium mb-4">
-                    Fazreil Amreen
+                    Fazreil Amreen Bin Abdul Jalil
                   </blockquote>
-                  <cite className="block font-bold text-lg not-italic mb-1">Senior DevOps Engineer</cite>
+                  <cite className="block font-bold text-lg not-italic mb-1">DevOps</cite>
                   <div className="text-gray-600">
-                    <span>MCSB </span> 
+                    <span>MIDF</span> 
                   </div>
                   <div>
-                    <a className="text-blue-600 hover:underline" target='_blank' href="https://mjsr.e-masjid.my">LinkedIn</a>
+                    <a className="text-blue-600 hover:underline" target='_blank' href="https://my.linkedin.com/in/ts-fazreil-amreen-abdul-jalil-a0259321">LinkedIn</a>
                   </div>
                 </div>
               </div>
