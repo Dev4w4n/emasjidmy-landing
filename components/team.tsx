@@ -7,6 +7,7 @@ import KimImage from '@/public/images/kim.png'
 import PojiImage from '@/public/images/poji.png'
 import ZulImage from '@/public/images/zul.png'
 import FabImage from '@/public/images/fazreil.png'
+import ArafatImage from '@/public/images/arafat.png'
 
 export default function Team() {
   return (
@@ -20,7 +21,7 @@ export default function Team() {
               <stop stopColor="#FFF" offset="0%" />
               <stop stopColor="#EAEAEA" offset="77.402%" />
               <stop stopColor="#DFDFDF" offset="100%" />
-            </linearGradient>TestimonialImage
+            </linearGradient>TeamImage
           </defs>
           <g transform="translate(0 -3)" fill="url(#illustration-02)" fillRule="evenodd">
             <circle cx="1630" cy="128" r="128" />
@@ -59,6 +60,7 @@ export default function Team() {
                 </div>
               </div>
             </div>
+          
             
           <div className="flex flex-wrap justify-center">
             <div className="box-container mx-auto mt-20" data-aos="zoom-y-out">
@@ -183,6 +185,30 @@ export default function Team() {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="flex flex-wrap justify-center">
+            
+            <div className="box-container mx-auto mt-20" data-aos="zoom-y-out">
+              <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+                <div className="text-center px-3 py-8 pt-20 mx-4 md:mx-0">
+                  <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                    <Image className="relative rounded-full" src={ArafatImage} width={96} height={96} alt="Izan" />
+                  </div>
+                  <blockquote className="text-xl font-medium mb-4">
+                    Mohamad Arafat 
+                  </blockquote>
+                  <cite className="block font-bold text-lg not-italic mb-1">Senior System Engineer </cite>
+                  <div className="text-gray-600">
+                    <span>AMD </span> 
+                  </div>
+                  <div>
+                  <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/mohamad-arafat-5b445691/">Profil LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
