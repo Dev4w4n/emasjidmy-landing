@@ -43,10 +43,7 @@ export default function Hero() {
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Inisiatif Perisian Sumber Terbuka untuk Transformasi Pengurusan Masjid. Kebebasan, Inovasi dan Kawalan Penuh di dalam Genggaman Anda.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://github.com/Dev4w4n/e-masjid" target='_blank'>Download percuma</a>
-                </div>
-                <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="/mohondemo">Mohon Demo</a>
+                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" target='_blank' rel="noreferrer" href="https://wa.me/+60124062988">Daftar akaun percuma seumur hidup</a>
                 </div>
               </div>
             </div>
