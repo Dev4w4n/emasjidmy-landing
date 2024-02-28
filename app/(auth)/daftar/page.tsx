@@ -31,8 +31,14 @@ export default function MohonDemo() {
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
-                  <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="password">Telefon <span className="text-red-600">*</span></label>
+                  <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="telefon">Telefon <span className="text-red-600">*</span></label>
                   <input id="phone" type="text" className="form-input w-full text-gray-800" placeholder="Masukkan no telefon anda" required />
+                </div>
+              </div>
+              <div className="flex flex-wrap -mx-3 mb-4">
+                <div className="w-full px-3">
+                  <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="masjid">Nama penuh masjid <span className="text-red-600">*</span></label>
+                  <input id="phone" type="text" className="form-input w-full text-gray-800" placeholder="Masukkan nama penuh masjid" required />
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mt-6">
