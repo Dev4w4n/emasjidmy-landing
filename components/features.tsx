@@ -45,6 +45,7 @@ export default function Features() {
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3">Modul mudah dipelajari</h3>
                 <p className="text-xl text-gray-600">Semua modul dilengkapi dengan link video tutorial. Klik kotak di bawah untuk mengetahui lebih lanjut</p>
+                <p>(Klik kotak-kotak di bawah untuk melihat contoh skrin)</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
