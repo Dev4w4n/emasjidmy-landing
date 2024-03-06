@@ -42,7 +42,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className='ml-6'>
+                <Link href="https://docs.e-masjid.my" target='_blank' rel="noreferrer" className='ml-6'>
                   <span>Bahan Rujukan</span>
                 </Link>
               </li>
