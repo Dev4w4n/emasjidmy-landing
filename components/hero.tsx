@@ -43,7 +43,7 @@ export default function Hero() {
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Inisiatif Perisian Sumber Terbuka untuk Transformasi Pengurusan Masjid. Kebebasan, Inovasi dan Kawalan Penuh di dalam Genggaman Anda.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="/daftar">Daftar akaun percuma seumur hidup</a>
+                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" target='_blank' rel="noreferrer" href="https://wa.me/+60124062988">Daftar akaun percuma</a>
                 </div>
               </div>
             </div>
