@@ -9,6 +9,7 @@ import ZulImage from '@/public/images/zul.png'
 import FabImage from '@/public/images/fazreil.png'
 import ArafatImage from '@/public/images/arafat.png'
 import FairulImage from '@/public/images/fairul.jpeg'
+import AimanImage from '@/public/images/aiman.png'
 
 export default function Team() {
   return (
@@ -225,6 +226,26 @@ export default function Team() {
                   </div>
                   <div>
                     <a className="text-blue-600 hover:underline" target='_blank' href="https://my.linkedin.com/in/fairulr">Profil LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="box-container mx-auto mt-20" data-aos="zoom-y-out">
+              <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+                <div className="text-center px-3 py-8 pt-20 mx-4 md:mx-0">
+                  <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                    <Image className="relative rounded-full" src={AimanImage} width={96} height={96} alt="Mr Fab" />
+                  </div>
+                  <blockquote className="text-xl font-medium mb-4">
+                    Aiman Fariz Zaqwan
+                  </blockquote>
+                  <cite className="block font-bold text-lg not-italic mb-1">Student</cite>
+                  <div className="text-gray-600">
+                    <span>University of Tulsa</span> 
+                  </div>
+                  <div>
+                    <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/aiman-fariz-zaqwan-akmal-hizam-78a492277">Profil LinkedIn</a>
                   </div>
                 </div>
               </div>
