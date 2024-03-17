@@ -10,6 +10,8 @@ import FabImage from '@/public/images/fazreil.png'
 import ArafatImage from '@/public/images/arafat.png'
 import FairulImage from '@/public/images/fairul.jpeg'
 import AimanImage from '@/public/images/aiman.png'
+import DrSyam from '@/public/images/drsyam.png'
+import Faizan from '@/public/images/faizan.jpg'
 
 export default function Team() {
   return (
@@ -92,7 +94,7 @@ export default function Team() {
                     <Image className="relative rounded-full" src={FabImage} width={96} height={96} alt="Mr Fab" />
                   </div>
                   <blockquote className="text-xl font-medium mb-4">
-                    Fazreil Amreen Bin Abdul Jalil
+                    Ts. Fazreil Amreen Abdul Jalil
                   </blockquote>
                   <cite className="block font-bold text-lg not-italic mb-1">DevOps</cite>
                   <div className="text-gray-600">
@@ -246,6 +248,49 @@ export default function Team() {
                   </div>
                   <div>
                     <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/aiman-fariz-zaqwan-akmal-hizam-78a492277">Profil LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="flex flex-wrap justify-center">
+            <div className="box-container mx-auto mt-20" data-aos="zoom-y-out">
+              <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+                <div className="text-center px-3 py-8 pt-20 mx-4 md:mx-0">
+                  <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                    <Image className="relative rounded-full" src={DrSyam} width={96} height={96} alt="Izan" />
+                  </div>
+                  <blockquote className="text-xl font-medium mb-4">
+                    Dr. Mohd Syamirulah Rahim
+                  </blockquote>
+                  <cite className="block font-bold text-lg not-italic mb-1">Medical Doctor, Writer</cite>
+                  <div className="text-gray-600">
+                    <span>Freelancer </span> 
+                  </div>
+                  <div>
+                  <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/syamirulah/">Profil LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="box-container mx-auto mt-20" data-aos="zoom-y-out">
+              <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+                <div className="text-center px-3 py-8 pt-20 mx-4 md:mx-0">
+                  <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                    <Image className="relative rounded-full" src={Faizan} width={96} height={96} alt="Mr Fab" />
+                  </div>
+                  <blockquote className="text-xl font-medium mb-4">
+                    Ts. Mohamad Faizan
+                  </blockquote>
+                  <cite className="block font-bold text-lg not-italic mb-1">KF Legacy Resources</cite>
+                  <div className="text-gray-600">
+                    <span>Director</span> 
+                  </div>
+                  <div>
+                    <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/faizan-rahman-591102b7">Profil LinkedIn</a>
                   </div>
                 </div>
               </div>
