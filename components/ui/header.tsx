@@ -37,8 +37,8 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link href="/" className='ml-6'>
-                  <span>Utama</span>
+                <Link href="https://github.com/Dev4w4n/e-masjid.my" className='ml-6'>
+                  <span>GitHub</span>
                 </Link>
               </li>
               <li>
