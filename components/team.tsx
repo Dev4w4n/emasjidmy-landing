@@ -13,6 +13,7 @@ import AimanImage from '@/public/images/aiman.png'
 import DrSyam from '@/public/images/drsyam.png'
 import Faizan from '@/public/images/faizan.jpg'
 import Deen from '@/public/images/Deen.png'
+import Amir from '@/public/images/amir.png'
 
 export default function Team() {
   return (
@@ -52,7 +53,7 @@ export default function Team() {
                       <Image className="relative rounded-full" src={IzanImage} width={96} height={96} alt="Izan" />
                     </div>
                     <blockquote className="text-xl font-medium mb-4">
-                      Rohaizan bin Roosley
+                      Rohaizan Roosley
                     </blockquote>
                     <cite className="block font-bold text-lg not-italic mb-1">Pengasas Sistem E-Masjid.My</cite>
                     <div className="text-gray-600">
@@ -286,9 +287,9 @@ export default function Team() {
                   <blockquote className="text-xl font-medium mb-4">
                     Ts. Mohamad Faizan
                   </blockquote>
-                  <cite className="block font-bold text-lg not-italic mb-1">KF Legacy Resources</cite>
+                  <cite className="block font-bold text-lg not-italic mb-1">Director</cite>
                   <div className="text-gray-600">
-                    <span>Director</span> 
+                    <span>KF Legacy Resources</span> 
                   </div>
                   <div>
                     <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/faizan-rahman-591102b7">Profil LinkedIn</a>
@@ -319,6 +320,30 @@ export default function Team() {
             </div>
 
           </div>
+
+          <div className="flex flex-wrap justify-center">
+            <div className="box-container mx-auto mt-20" data-aos="zoom-y-out">
+              <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+                <div className="text-center px-3 py-8 pt-20 mx-4 md:mx-0">
+                  <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                    <Image className="relative rounded-full" src={Amir} width={96} height={96} alt="Izan" />
+                  </div>
+                  <blockquote className="text-xl font-medium mb-4">
+                    Muhamad Amir bin Azmi
+                  </blockquote>
+                  <cite className="block font-bold text-lg not-italic mb-1">Prodigious Worldwide</cite>
+                  <div className="text-gray-600">
+                    <span>Frontend Developer </span> 
+                  </div>
+                  <div>
+                  <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/m-amirazmi/">Profil LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
 
         </div>
       </div>
