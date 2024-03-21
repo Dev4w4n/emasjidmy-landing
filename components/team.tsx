@@ -12,6 +12,7 @@ import FairulImage from '@/public/images/fairul.jpeg'
 import AimanImage from '@/public/images/aiman.png'
 import DrSyam from '@/public/images/drsyam.png'
 import Faizan from '@/public/images/faizan.jpg'
+import Deen from '@/public/images/Deen.png'
 
 export default function Team() {
   return (
@@ -291,6 +292,27 @@ export default function Team() {
                   </div>
                   <div>
                     <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/faizan-rahman-591102b7">Profil LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="box-container mx-auto mt-20" data-aos="zoom-y-out">
+              <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
+                <div className="text-center px-3 py-8 pt-20 mx-4 md:mx-0">
+                  <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                    <Image className="relative rounded-full" src={Deen} width={96} height={96} alt="Mr Fab" />
+                  </div>
+                  <blockquote className="text-xl font-medium mb-4">
+                    Mahyudin Ayub
+                  </blockquote>
+                  <cite className="block font-bold text-lg not-italic mb-1">Frontend Developer</cite>
+                  <div className="text-gray-600">
+                    <span>Freelancer</span> 
+                  </div>
+                  <div>
+                    <a className="text-blue-600 hover:underline" target='_blank' href="https://www.linkedin.com/in/mahyudin-ayub-5b0b2795">Profil LinkedIn</a>
                   </div>
                 </div>
               </div>
