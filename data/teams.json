@@ -1,0 +1,114 @@
+[
+  {
+    "image": "/images/izan.png",
+    "name": "Rohaizan Roosley",
+    "role": "Pengasas Sistem E-Masjid.My",
+    "company": "Intel Corporation",
+    "linkedin": "https://www.linkedin.com/in/rohaizanroosley/",
+    "highlight": true
+  },
+  {
+    "image": "/images/anas.png",
+    "name": "Nik Mohamad Anas",
+    "role": "Senior Software Engineer",
+    "company": "SEEK",
+    "linkedin": "https://www.linkedin.com/in/nik-mohamad-anas-kamarudin-99614235/",
+    "highlight": false
+  },
+  {
+    "image": "/images/fazreil.png",
+    "name": "Ts. Fazreil Amreen Abdul Jalil",
+    "role": "DevOps",
+    "company": "MIDF",
+    "linkedin": "https://my.linkedin.com/in/ts-fazreil-amreen-abdul-jalil-a0259321",
+    "highlight": false
+  },
+  {
+    "image": "/images/eros.png",
+    "name": "Muhammad Fairuz Anwar",
+    "role": "Senior Software Engineer",
+    "company": "Motorola Solutions",
+    "linkedin": "https://www.linkedin.com/in/muhammadfairuz-anwar/",
+    "highlight": false
+  },
+  {
+    "image": "/images/zul.png",
+    "name": "Zulkarnain Jahidi",
+    "role": "Senior Executive",
+    "company": "Universiti Teknologi Petronas",
+    "linkedin": "https://www.linkedin.com/in/zulkarnain-jahidi-nordin-a93288245",
+    "highlight": false
+  },
+  {
+    "image": "/images/kim.png",
+    "name": "Syahrul Hakimah Ong",
+    "role": "Senior Software Engineer",
+    "company": "Freelancer",
+    "linkedin": "https://www.linkedin.com/in/syahrul-hakimah-ong/",
+    "highlight": false
+  },
+  {
+    "image": "/images/poji.png",
+    "name": "Fauzi Ibrahim",
+    "role": "Senior Software Developer",
+    "company": "AMD",
+    "linkedin": "https://www.linkedin.com/in/fauzi-ibrahim-81092a237",
+    "highlight": false
+  },
+  {
+    "image": "/images/arafat.png",
+    "name": "Mohamad Arafat",
+    "role": "Senior System Engineer",
+    "company": "AMD",
+    "linkedin": "https://www.linkedin.com/in/mohamad-arafat-5b445691/",
+    "highlight": false
+  },
+  {
+    "image": "/images/fairul.jpeg",
+    "name": "Fairul Rizal Bin Fahrurazi",
+    "role": "Software Development Manager",
+    "company": "MIMOS Berhad",
+    "linkedin": "https://my.linkedin.com/in/fairulr",
+    "highlight": false
+  },
+  {
+    "image": "/images/aiman.png",
+    "name": "Aiman Fariz Zaqwan",
+    "role": "Student",
+    "company": "University of Tulsa",
+    "linkedin": "https://www.linkedin.com/in/aiman-fariz-zaqwan-akmal-hizam-78a492277",
+    "highlight": false
+  },
+  {
+    "image": "/images/drsyam.png",
+    "name": "Dr. Mohd Syamirulah Rahim",
+    "role": "Medical Doctor, Writer",
+    "company": "Freelancer",
+    "linkedin": "https://www.linkedin.com/in/syamirulah/",
+    "highlight": false
+  },
+  {
+    "image": "/images/faizan.jpg",
+    "name": "Ts. Mohamad Faizan",
+    "role": "Director",
+    "company": "KF Legacy Resources",
+    "linkedin": "https://www.linkedin.com/in/faizan-rahman-591102b7",
+    "highlight": false
+  },
+  {
+    "image": "/images/Deen.png",
+    "name": "Mahyudin Ayub",
+    "role": "Frontend Developer",
+    "company": "Freelancer",
+    "linkedin": "https://www.linkedin.com/in/mahyudin-ayub-5b0b2795",
+    "highlight": false
+  },
+  {
+    "image": "/images/amir.png",
+    "name": "Muhamad Amir bin Azmi",
+    "role": "Frontend Developer",
+    "company": "Prodigious Worldwide",
+    "linkedin": "https://www.linkedin.com/in/m-amirazmi/",
+    "highlight": false
+  }
+]
