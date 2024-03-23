@@ -69,9 +69,9 @@ export default function Teams() {
                   >
                     <div className="h-full relative flex justify-center items-center border-2 border-gray-200 rounded bg-white">
                       <div className="h-full text-center px-3 py-8 pt-20 mx-4 md:mx-0">
-                        <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                        <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2 w-24 h-24">
                           <Image
-                            className="relative rounded-full"
+                            className="relative rounded-full w-full h-full object-cover"
                             src={i.image}
                             width={96}
                             height={96}
