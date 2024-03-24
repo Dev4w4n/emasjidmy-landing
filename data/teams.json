@@ -110,5 +110,13 @@
     "company": "Prodigious Worldwide",
     "linkedin": "https://www.linkedin.com/in/m-amirazmi/",
     "highlight": false
+  },
+  {
+    "image": "/images/adam.jpeg",
+    "name": "Adam Janin",
+    "role": "Senior Software Engineer",
+    "company": "Freelancer",
+    "linkedin": "https://www.linkedin.com/in/adam-janin-898466129/",
+    "highlight": false
   }
 ]
