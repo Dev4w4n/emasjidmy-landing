@@ -118,5 +118,13 @@
     "company": "Freelancer",
     "linkedin": "https://www.linkedin.com/in/adam-janin-898466129/",
     "highlight": false
+  },
+  {
+    "image": "/images/Hisyam.jpg",
+    "name": "Muhammad Hafizul Hisyam",
+    "role": "iOS Developer",
+    "company": "Terato Tech",
+    "linkedin": "https://www.linkedin.com/in/hisyam-nasir/",
+    "highlight": false
   }
 ]
