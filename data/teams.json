@@ -142,5 +142,13 @@
     "company": "Intel Corporation",
     "linkedin": "https://www.linkedin.com/in/faizshukri",
     "highlight": false
+  },
+  {
+    "image": "/images/nazhan.jpg",
+    "name": "Ahmad Nazhan bin Sukri",
+    "role": "Junior Frontend Developer",
+    "company": "AsiaQuest Malaysia Sdn. Bhd.",
+    "linkedin": "https://www.linkedin.com/in/ahmad-nazhan",
+    "highlight": false
   }
 ]
