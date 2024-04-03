@@ -126,5 +126,13 @@
     "company": "Terato Tech",
     "linkedin": "https://www.linkedin.com/in/hisyam-nasir/",
     "highlight": false
+  },
+  {
+    "image": "/images/Israa.jpg",
+    "name": "Israa Saifullah",
+    "role": "Software Engineer",
+    "company": "AsiaQuest Malaysia Sdn. Bhd.",
+    "linkedin": "https://www.linkedin.com/in/israaibnusaifullah",
+    "highlight": false
   }
 ]
