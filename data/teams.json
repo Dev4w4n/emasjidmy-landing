@@ -134,5 +134,13 @@
     "company": "AsiaQuest Malaysia Sdn. Bhd.",
     "linkedin": "https://www.linkedin.com/in/israaibnusaifullah",
     "highlight": false
+  },
+  {
+    "image": "/images/faiz.jpg",
+    "name": "Faiz Shukri",
+    "role": "Senior Software Engineer",
+    "company": "Intel Corporation",
+    "linkedin": "https://www.linkedin.com/in/faizshukri",
+    "highlight": false
   }
 ]
