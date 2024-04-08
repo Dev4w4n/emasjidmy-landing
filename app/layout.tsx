@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "E-Masjid",
     images: [
       {
-        url: "https://cdn.e-masjid.my/images/emasjidmy-banner.png",
+        url: "https://cdn.e-masjid.my/images/emasjidmy-banner.jpg",
         width: 800,
         height: 600,
       },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "E-Masjid.MY",
     description:
       "E-Masjid.My: Sistem Masjid Untuk Semua. Ihsan dari warga Github.",
-    images: ["https://cdn.e-masjid.my/images/emasjidmy-banner.png"],
+    images: ["https://cdn.e-masjid.my/images/emasjidmy-banner.jpg"],
   },
 };
 
