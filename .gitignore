@@ -39,7 +39,6 @@ next-env.d.ts
 .contentlayer
 
 deploy.sh
-Dockerfile
 file-copy-pod.yaml
 kaniko-build-pod.yaml
 deploy-to-kubernetes.yaml
