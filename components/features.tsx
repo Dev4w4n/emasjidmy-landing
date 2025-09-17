@@ -19,7 +19,8 @@ export default function Features() {
 
   useEffect(() => {
     heightFix()
-  }, []) 
+    // Run heightFix whenever tab changes
+  }, [tab]) 
 
   return (
     <section className="relative">
@@ -86,7 +87,7 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Dwi-platform</div>
-                    <div className="text-gray-600">Reka bentuk sistem "responsive" yang sesuai digunakan melalui komputer ataupun telefon pintar.</div>
+                    <div className="text-gray-600">Reka bentuk sistem &quot;responsive&quot; yang sesuai digunakan melalui komputer ataupun telefon pintar.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -105,17 +106,15 @@ export default function Features() {
                   <Transition
                     show={tab === 1}
                     appear={true}
-                    className="w-full"
                     enter="transition ease-in-out duration-700 transform order-first"
                     enterFrom="opacity-0 translate-y-16"
                     enterTo="opacity-100 translate-y-0"
                     leave="transition ease-in-out duration-300 transform absolute"
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
                     unmount={false}                     
                   >
-                    <div className="relative inline-flex flex-col">
+                    <div className="relative inline-flex flex-col w-full">
                       <Image className="md:max-w-none mx-auto rounded" src={Features1} width={500} height="462" alt="Features bg" />
                       {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
@@ -124,17 +123,15 @@ export default function Features() {
                   <Transition
                     show={tab === 2}
                     appear={true}
-                    className="w-full"
                     enter="transition ease-in-out duration-700 transform order-first"
                     enterFrom="opacity-0 translate-y-16"
                     enterTo="opacity-100 translate-y-0"
                     leave="transition ease-in-out duration-300 transform absolute"
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
                     unmount={false}                     
                   >
-                    <div className="relative inline-flex flex-col">
+                    <div className="relative inline-flex flex-col w-full">
                       <Image className="md:max-w-none mx-auto rounded" src={Features2} width={500} height="462" alt="Features bg" />
                       {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
@@ -143,17 +140,15 @@ export default function Features() {
                   <Transition
                     show={tab === 3}
                     appear={true}
-                    className="w-full"
                     enter="transition ease-in-out duration-700 transform order-first"
                     enterFrom="opacity-0 translate-y-16"
                     enterTo="opacity-100 translate-y-0"
                     leave="transition ease-in-out duration-300 transform absolute"
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
                     unmount={false}                     
                   >
-                    <div className="relative inline-flex flex-col">
+                    <div className="relative inline-flex flex-col w-full">
                       <Image className="md:max-w-none mx-auto rounded" src={Features3} width={500} height="462" alt="Features bg" />
                       {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
