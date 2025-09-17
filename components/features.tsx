@@ -2,10 +2,6 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
-import Image from 'next/image'
-import Features1 from '@/public/images/feature1.png'
-import Features2 from '@/public/images/feature2.png'
-import Features3 from '@/public/images/feature3.png'
 
 export default function Features() {
   
@@ -115,8 +111,8 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col w-full">
-                      <Image className="md:max-w-none mx-auto rounded" src={Features1} width={500} height="462" alt="Features bg" />
-                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
+                      <img className="md:max-w-none mx-auto rounded" src="/images/feature1.png" width={500} height={462} alt="Features bg" />
+                      {/* <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -132,8 +128,8 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col w-full">
-                      <Image className="md:max-w-none mx-auto rounded" src={Features2} width={500} height="462" alt="Features bg" />
-                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
+                      <img className="md:max-w-none mx-auto rounded" src="/images/feature2.png" width={500} height={462} alt="Features bg" />
+                      {/* <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -149,8 +145,8 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col w-full">
-                      <Image className="md:max-w-none mx-auto rounded" src={Features3} width={500} height="462" alt="Features bg" />
-                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
+                      <img className="md:max-w-none mx-auto rounded" src="/images/feature3.png" width={500} height={462} alt="Features bg" />
+                      {/* <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
                   </Transition>
                 </div>

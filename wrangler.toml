@@ -1,0 +1,19 @@
+name = "emasjid-landing"
+compatibility_date = "2024-01-01"
+
+# Build configuration for Cloudflare Pages
+pages_build_output_dir = "out"
+
+# Custom headers (optional)
+# [[headers]]
+# for = "/*"
+# [headers.values]
+# X-Frame-Options = "DENY"
+# X-Content-Type-Options = "nosniff"
+# Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Redirects (optional)
+# [[redirects]]
+# from = "/old-path"
+# to = "/new-path"
+# status = 301

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "E-Masjid",
     images: [
       {
-        url: "https://cdn.e-masjid.my/images/emasjidmy-banner.jpg",
+        url: "https://i.postimg.cc/9FSqLnc5/emasjidmy-banner.jpg",
         width: 800,
         height: 600,
       },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "E-Masjid.MY",
     description:
       "E-Masjid.My: Sistem Masjid Untuk Semua. Ihsan dari warga Github.",
-    images: ["https://cdn.e-masjid.my/images/emasjidmy-banner.jpg"],
+    images: ["https://i.postimg.cc/9FSqLnc5/emasjidmy-banner.jpg"],
   },
 };
 
@@ -45,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}
       >

@@ -1,8 +1,53 @@
-import { NextRequest, NextResponse } from 'next/server'
 import { describe, it, expect, jest, beforeEach } from '@jest/globals'
 
+// Mock NextRequest since it's not available in jsdom environment
+class MockNextRequest {
+  url: string
+  method: string
+  headers: Map<string, string>
+
+  constructor(url: string, init?: { method?: string; headers?: Record<string, string> }) {
+    this.url = url
+    this.method = init?.method || 'GET'
+    this.headers = new Map()
+    if (init?.headers) {
+      Object.entries(init.headers).forEach(([key, value]) => {
+        this.headers.set(key.toLowerCase(), value)
+      })
+    }
+  }
+}
+
+// Mock NextResponse for testing
+class MockNextResponse {
+  status: number
+  headers: { get: (key: string) => string | null }
+  body: string | null
+  private _headers: Map<string, string>
+
+  constructor(body: string | null, init?: { status?: number; headers?: Record<string, string> }) {
+    this.body = body
+    this.status = init?.status || 200
+    this._headers = new Map()
+    if (init?.headers) {
+      Object.entries(init.headers).forEach(([key, value]) => {
+        this._headers.set(key.toLowerCase(), value)
+      })
+    }
+    
+    // Create headers object with get method
+    this.headers = {
+      get: (key: string) => this._headers.get(key.toLowerCase()) || null
+    }
+  }
+
+  async text(): Promise<string> {
+    return this.body || ''
+  }
+}
+
 // Mock the sitemap API that will be implemented later
-const GET = async (request: NextRequest) => {
+const GET = async (request: MockNextRequest): Promise<MockNextResponse> => {
   // This will be implemented in later tasks
   throw new Error('Sitemap API not implemented yet')
 }
@@ -13,7 +58,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should generate XML sitemap with proper structure', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)
@@ -39,7 +84,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should include all static pages in sitemap', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)
@@ -62,7 +107,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should set appropriate priorities for different page types', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)
@@ -80,7 +125,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should set appropriate change frequencies', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)
@@ -98,7 +143,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should include proper lastmod dates', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)
@@ -115,7 +160,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should handle dynamic content discovery', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)
@@ -134,7 +179,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should generate valid XML according to sitemap protocol', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)
@@ -157,7 +202,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should handle large sitemaps with pagination', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)
@@ -178,8 +223,8 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should cache sitemap for performance', async () => {
-    const request1 = new NextRequest('https://e-masjid.my/api/sitemap.xml')
-    const request2 = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request1 = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request2 = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response1 = await GET(request1)
@@ -202,7 +247,7 @@ describe('Sitemap XML Generation API', () => {
 
   it('should support conditional requests with If-Modified-Since', async () => {
     const lastWeek = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toUTCString()
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml', {
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml', {
       headers: {
         'If-Modified-Since': lastWeek
       }
@@ -222,7 +267,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should include multilingual pages if i18n is configured', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)
@@ -242,7 +287,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should exclude pages based on robots.txt directives', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)
@@ -261,7 +306,7 @@ describe('Sitemap XML Generation API', () => {
 
   it('should handle errors gracefully', async () => {
     // Test with invalid request
-    const invalidRequest = new NextRequest('https://e-masjid.my/api/sitemap.xml', {
+    const invalidRequest = new MockNextRequest('https://e-masjid.my/api/sitemap.xml', {
       method: 'POST' // Should only accept GET
     })
 
@@ -272,7 +317,7 @@ describe('Sitemap XML Generation API', () => {
   })
 
   it('should validate URL format and accessibility', async () => {
-    const request = new NextRequest('https://e-masjid.my/api/sitemap.xml')
+    const request = new MockNextRequest('https://e-masjid.my/api/sitemap.xml')
 
     await expect(async () => {
       const response = await GET(request)

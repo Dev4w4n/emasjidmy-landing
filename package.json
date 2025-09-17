@@ -5,6 +5,8 @@
   "scripts": {
     "start": "next dev",
     "build": "next build",
+    "build:cloudflare": "NEXT_CONFIG_FILE=next.config.cloudflare.js next build",
+    "deploy:cloudflare": "./deploy-cloudflare.sh",
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
