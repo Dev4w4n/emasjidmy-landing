@@ -31,21 +31,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* 3rd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Bahan Rujukan</h6>
-            <ul className="text-sm">
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Dokumentasi</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Video Tutorial</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</a>
-              </li>
-            </ul>
-          </div>
+          {/* 3rd block - removed Bahan Rujukan section */}
 
           {/* 4th block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
