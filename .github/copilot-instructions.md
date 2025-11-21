@@ -1,56 +1,124 @@
-# E-Masjid Landing Development Guidelines
+# E-Masjid Landing Page Development Guidelines
 
-Auto-generated from feature plan 001-migrate-this-project. Last updated: 18 September 2025
+Auto-generated from feature plans. Last updated: 21 November 2025
 
 ## Active Technologies
-- **Language/Version**: TypeScript 5.3, React 18.2, Next.js 15.0.3
-- **Primary Dependencies**: @headlessui/react, AOS animation, TailwindCSS 3.3.6, Sharp image optimization
-- **Testing**: Jest with React Testing Library, Lighthouse for SEO auditing
-- **Target Platform**: Web application (browser + search engines), deployed as standalone
+
+**Language/Version**: TypeScript 5.3, React 18.2, Next.js 15.0.3  
+**Primary Dependencies**: @headlessui/react, TailwindCSS 3.3.6, AOS animation  
+**Testing**: Jest with React Testing Library  
+**Target Platform**: Web application (Next.js App Router)  
 
 ## Project Structure
+
 ```
-app/                     # Next.js App Router
-├── layout.tsx          # Root layout with metadata
-├── (auth)/             # Auth route group
-├── (default)/          # Default route group
-├── api/                # API routes
-└── css/                # Global styles
+app/                          # Next.js App Router
+├── layout.tsx               # Root layout
+├── (auth)/                  # Auth routes
+│   └── daftar/
+├── (default)/               # Default layout routes
+│   └── page.tsx            # Home page
+└── css/                     # Global styles
 
-components/             # React components
-├── ui/                # UI components
-└── utils/             # Utility components
+components/                  # React components
+├── hero.tsx
+├── features.tsx
+├── features-blocks.tsx
+├── testimonials.tsx
+├── newsletter.tsx
+├── pricing.tsx
+├── teams.tsx
+├── banner.tsx
+├── modal-video.tsx
+├── ui/                     # UI components
+│   ├── header.tsx
+│   ├── footer.tsx
+│   ├── logo.tsx
+│   └── mobile-menu.tsx
+└── utils/                  # Utility components
+    ├── accordion.tsx
+    └── dropdown.tsx
 
-specs/001-migrate-this-project/  # Current feature documentation
-├── plan.md            # Implementation plan
-├── research.md        # Technology research
-├── data-model.md      # SEO data models
-├── quickstart.md      # Validation guide
-└── contracts/         # API contracts
+__tests__/                   # Jest test files
+├── components/
+└── api/
+
+specs/                       # Feature specifications
+└── [###-feature-name]/
+    ├── spec.md
+    ├── plan.md
+    ├── quickstart.md
+    └── tasks.md
 ```
 
-## SEO Optimization Commands
+## Commands
+
+### Development
 ```bash
-# Development
-npm run start          # Start dev server
-npm run build         # Production build
-npm run lint          # ESLint check
-
-# SEO Testing
-lighthouse http://localhost:3000 --output html
-npx next-sitemap      # Generate sitemap
+npm run dev          # Start development server
+npm run build        # Build for production
+npm start            # Start production server
+npm test             # Run Jest tests
+npm run lint         # Run ESLint
 ```
 
-## Code Style - TypeScript/React
-- Use Next.js App Router with TypeScript
-- Implement SEO metadata using generateMetadata() function
-- Use next/image for optimized images with alt text
-- Follow component composition patterns
-- Use TailwindCSS for styling
-- Implement proper semantic HTML structure
+### Testing
+```bash
+npm test                    # Run all tests
+npm test -- --watch        # Watch mode
+npm test -- <filename>     # Test specific file
+```
+
+## Code Style
+
+### TypeScript/React
+- Use functional components with TypeScript
+- Use Next.js App Router conventions
+- Use Tailwind CSS for styling
+- Use 'use client' directive for client-side components
+- Follow React hooks best practices
+- Use proper TypeScript types (avoid `any`)
+
+### Component Structure
+```tsx
+'use client' // If client-side features needed
+
+import { useState } from 'react'
+
+export default function ComponentName() {
+  // State and hooks
+  
+  // Handlers
+  
+  return (
+    <section className="relative">
+      {/* Component content */}
+    </section>
+  )
+}
+```
+
+### Testing
+- Use React Testing Library
+- Test user interactions and component rendering
+- Follow AAA pattern (Arrange, Act, Assert)
 
 ## Recent Changes
-- **001-migrate-this-project**: Added comprehensive SEO optimization including metadata management, structured data, sitemap generation, and performance optimization
+
+### Feature 002: Update Landing Page Content (2025-11-21)
+- Removed "Bahan Rujukan" navigation links from header, footer, and mobile menu
+- Removed "Daftar akaun percuma" buttons from hero and header
+- Changed "Modul mudah dipelajari" to "Modul Pengiklanan TV Masjid" in features section
+- Removed entire "Modul yang terkandung di E-Masjid setakat ini" section
+- Updated affected component tests
+
+**Modified Files**:
+- `components/hero.tsx`
+- `components/features.tsx`
+- `components/features-blocks.tsx`
+- `components/ui/header.tsx`
+- `components/ui/footer.tsx`
+- `components/ui/mobile-menu.tsx`
 
 <!-- MANUAL ADDITIONS START -->
 <!-- MANUAL ADDITIONS END -->
