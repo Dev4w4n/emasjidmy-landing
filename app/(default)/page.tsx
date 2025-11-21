@@ -6,7 +6,6 @@ export const metadata = {
 
 import Hero from "@/components/hero";
 import Features from "@/components/features";
-import Testimonials from "@/components/testimonials";
 import Newsletter from "@/components/newsletter";
 import Teams from "@/components/teams";
 
@@ -16,7 +15,6 @@ export default function Home() {
       <Hero />
       <Teams />
       <Features />
-      <Testimonials />
       <Newsletter />
     </>
   );
